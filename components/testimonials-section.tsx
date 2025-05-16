@@ -8,32 +8,48 @@ import { ChevronLeft, ChevronRight, Star, Heart, ThumbsUp } from "lucide-react"
 import Image from "next/image"
 
 export default function TestimonialsSection() {
-  const testimonials = [
+   const testimonials = [
     {
-      name: "Priya Sharma",
+      name: "Raghav Wadhwa",
       age: "24",
       image: "/indian-woman-professional-headshot.png",
       quote:
-        "After years of back pain from desk work, Dr. Yogita's treatment plan gave me relief in just 3 weeks. Her approach is thorough and personalized.",
+        "I recently had the pleasure of receiving treatment from Dr. Yogita. She is incredibly knowledgeable, attentive, and genuinely cares about her patients. Her thorough assessment and personalized treatment plan made a significant difference in my recovery. Each session was productive and tailored to my specific needs. Thanks to Dr. Yogita, I have experienced remarkable improvement and feel much more confident in my health and well-being.",
       reaction: <Heart className="h-5 w-5 text-pink-500" />,
     },
     {
-      name: "Rahul Mehta",
+      name: "Gulati C P",
       age: "28",
       image: "/indian-man-headshot.png",
       quote:
-        "The online therapy sessions were incredibly convenient and effective. Dr. Yogita's expertise shines through even in virtual consultations.",
+        "Dr. Yogita Choudhary is very helpful & professionally expert in resolving my recurrent issues of Neck stiffness & pain. I'm very thankful to Madam for helping me to get back to my routine. Best regards.",
       reaction: <ThumbsUp className="h-5 w-5 text-blue-500" />,
     },
     {
-      name: "Ananya Patel",
+      name: "Sanjeevshankar Rai",
       age: "29",
       image: "/indian-yoga-instructor-headshot.png",
       quote:
-        "As someone who understands body mechanics, I can say Dr. Yogita's knowledge is exceptional. She helped me recover from a shoulder injury that other therapists couldn't fix.",
+        "Dr Yogita is highly skilled, knowledgable and super-friendly and she’s the best physiotherapist I’ve ever had! Highly recommended. I’ve suffered from cervical Spondylitis for a long time and I can’t drive or sit without wearing the collar, but after going through a thorough program of both hands-on therapy and strength building exercises with Dr Yogita I’ve dramatically improved, removed the collar and feel totally perfect. Besides this, Dr Yogita is also counselling my old age parents with a feeling of a family member.",
       reaction: <Star className="h-5 w-5 text-yellow-500" />,
     },
-  ]
+    {
+      name: "Rajvir Singh",
+      age: "",
+      image: "/indian-woman-professional-headshot.png",
+      quote:
+        "Dr Yogita is very professional with her work, she has great knowledge and vast experience in Physiotherapy, I recommend her therapy to anyone who needs a good Physiotherapist in Gurgaon.",
+      reaction: <Heart className="h-5 w-5 text-pink-500" />,
+    },
+    {
+      name: "Souradip Mitra",
+      age: "",
+      image: "/indian-man-headshot.png",
+      quote:
+        "I was dealing with severe back pain and limited arm movement, but after just one session with Yogita ma'am, I experienced significant relief. By the third session, I was feeling completely back to normal. Her professionalism and expertise are outstanding, and I’m so grateful for her help!",
+      reaction: <ThumbsUp className="h-5 w-5 text-blue-500" />,
+    },
+  ];
 
   const [current, setCurrent] = useState(0)
   const timeoutRef = useRef<NodeJS.Timeout | null>(null)
